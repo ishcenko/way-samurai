@@ -6,7 +6,7 @@ const Header = () => {
       <a href="#s">Home</a>
       <a href="#s">New Feed</a>
       <a href="#s">Message</a>
-      <a href="#s">Freands</a>
+      <a href="#s">Friends</a>
     </div>
   );
 };
