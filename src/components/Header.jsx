@@ -6,6 +6,7 @@ const Header = () => {
       <header className="header">
         <img
           src="https://logos-world.net/wp-content/uploads/2020/04/Huawei-Logo.png"
+          alt="Image"
           width={150}
         />
       </header>
