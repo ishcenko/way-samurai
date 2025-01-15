@@ -11,7 +11,7 @@ const Post = () => {
       />
       post
       <div>
-        <span>Like</span>
+        <button>Like</button>
       </div>
     </div>
   );
