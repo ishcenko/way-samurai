@@ -1,19 +1,18 @@
 .nav {
-  grid-area: n;
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   gap: 16px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 32px;
-  background-color: rgba(14, 14, 12, 0.293);
+  background-color: rgba(1, 17, 248, 0.698);
 }
 .item {
-  /* display: block; */
+  display: block;
   font-size: 24px;
   color: rgb(255, 255, 253);
   list-style: none;
 }
 .item.active {
-  color: royalblue;
+  color: rgb(6, 7, 8);
 }

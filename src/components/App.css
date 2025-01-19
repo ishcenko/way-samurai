@@ -1,8 +1,16 @@
 .app-wrapper {
-  display: grid;
-  grid-template-areas:
-    'h h '
-    'n c';
-  grid-template-rows: 116px 10fr;
-  grid-template-columns: 200px 10fr;
+  width: 1232px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.app-wrapper-content {
+  /* padding-top: 23px; */
+  padding-bottom: 50px;
+  background: yellow;
 }

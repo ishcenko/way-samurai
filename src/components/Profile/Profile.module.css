@@ -1,6 +1,5 @@
 .content {
-  grid-area: c;
-  background-color: aquamarine;
+  background-color: rgba(3, 159, 250, 0.947);
 }
 .content img {
   max-width: 100%;
