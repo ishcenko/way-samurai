@@ -5,6 +5,7 @@ import Profile from './Profile/Profile';
 import './App.css';
 import Dialogs from './Dialogs/Dialogs';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Footer from './Footer/Footer';
 
 export const App = () => {
   return (
@@ -15,10 +16,13 @@ export const App = () => {
           <NavBar />
           <div className="app-wrapper-content">
             <Routes>
-              <Route path="dialogs" element={<Dialogs />} />
-              <Route path="profile" element={<Profile />} />
+              <Route path="/dialogs" element={<Dialogs />} />
+              <Route path="/profile" element={<Profile />} />
             </Routes>
           </div>
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     </BrowserRouter>

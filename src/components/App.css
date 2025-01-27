@@ -10,7 +10,5 @@
   flex-wrap: nowrap;
 }
 .app-wrapper-content {
-  /* padding-top: 23px; */
-  padding-bottom: 50px;
-  background: yellow;
+  width: 100%;
 }

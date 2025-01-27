@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 450px;
   min-height: 1000px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 32px;
+  /* padding-right: 16px; */
   padding-top: 32px;
   background-color: rgba(1, 17, 248, 0.698);
 }
@@ -13,7 +14,8 @@
   font-size: 24px;
   color: rgb(255, 255, 253);
   list-style: none;
+  text-decoration: none;
 }
 .item.active {
-  color: rgb(6, 7, 8);
+  color: rgb(2, 41, 79);
 }
