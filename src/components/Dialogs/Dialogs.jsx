@@ -2,20 +2,18 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import { NavLink } from 'react-router-dom';
 
-const DialogItem = (name, id) => {
+const DialogItem = ({ name, id }) => {
   let path = '/dialogs/' + id;
   return (
-    <div>
-      <div className={s.dialog}>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? `${s.dialog} ${s.active}` : s.dialog
-          }
-          to={path}
-        >
-          {name}
-        </NavLink>
-      </div>
+    <div className={s.dialog}>
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? `${s.dialog} ${s.active}` : s.dialog
+        }
+        to={path}
+      >
+        {name}
+      </NavLink>
     </div>
   );
 };
