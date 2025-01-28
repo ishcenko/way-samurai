@@ -20,6 +20,15 @@
   font-style: italic;
 }
 
+/* .dialog.active {
+  color: blue;
+} */
+
+.active {
+  color: red; /* Колір активного посилання */
+  font-weight: bold; /* Додатково можна зробити текст жирним */
+}
+
 .messages {
   display: flex;
   flex-direction: column;
