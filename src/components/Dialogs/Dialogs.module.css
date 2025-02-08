@@ -30,12 +30,12 @@
   font-size: 16px;
   font-style: italic;
 }
-/* .dialog {
+.dialog {
   font-size: 16px;
   font-style: italic;
-} */
+}
 
-.active {
+p.active {
   color: red; /* Колір активного посилання */
   font-weight: bold; /* Додатково можна зробити текст жирним */
 }
