@@ -9,6 +9,7 @@
   border: 2px solid rgba(255, 166, 0, 0.737);
   padding: 16px;
   margin-bottom: 50px;
+  background-color: rgb(227, 204, 204);
 }
 .item img {
   display: block;

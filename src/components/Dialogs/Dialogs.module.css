@@ -1,46 +1,41 @@
 .dialogs {
   display: flex;
   height: 100%;
-  background-color: rgb(131, 234, 131);
 }
 
 .dialogs_item {
+  border: 1px solid darkblue;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding-left: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  flex-wrap: nowrap;
+  gap: 26px;
+  padding-left: 30px;
+  padding-top: 44px;
+  background-color: rgb(246, 234, 6);
 
-  width: 30%;
+  width: 50%;
 }
 
-.dialog {
+.messages {
+  border: 1px solid darkblue;
+  display: block;
+  /* flex-direction: column; */
+  /* flex-wrap: nowrap; */
+  /* gap: 16px; */
+  padding-left: 30px;
+  padding-top: 24px;
+  background-color: rgb(4, 247, 4);
+
+  width: 50%;
   font-size: 16px;
   font-style: italic;
 }
-
-/* .dialog.active {
-  color: blue;
+/* .dialog {
+  font-size: 16px;
+  font-style: italic;
 } */
 
 .active {
   color: red; /* Колір активного посилання */
   font-weight: bold; /* Додатково можна зробити текст жирним */
-}
-
-.messages {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding-left: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  width: 70%;
-  background-color: orchid;
-}
-
-.message {
-  font-size: 16px;
-  font-style: italic;
 }
