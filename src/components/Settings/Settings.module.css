@@ -1,0 +1,14 @@
+.settings {
+  background: turquoise;
+  border: 1px solid red;
+
+  height: 100%;
+  margin: 0 auto;
+}
+
+.page_settings {
+  color: crimson;
+  font-size: 44px;
+  padding-top: 32px;
+  padding-left: 32px;
+}

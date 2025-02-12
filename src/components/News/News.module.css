@@ -1,0 +1,32 @@
+.news {
+  background: orange;
+  border: 1px solid red;
+
+  height: 100%;
+  margin: 0 auto;
+}
+
+.page_news {
+  color: rgb(120, 4, 4);
+  padding-top: 32px;
+  padding-left: 32px;
+  color: blue;
+  font-size: 44px;
+}
+.music {
+  background: greenyellow;
+  /* margin: 0 auto; */
+  height: 100%;
+  border: 1px solid red;
+}
+.page_music {
+  /* margin-left: 40px; */
+  /* width: max-content; */
+  padding-top: 32px;
+  padding-left: 32px;
+  color: blue;
+  font-size: 44px;
+}
+/* h3 {
+  margin: 0;
+} */

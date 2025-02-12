@@ -1,11 +1,15 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header/Header';
 import NavBar from './NavBar/NavBar';
 import Profile from './Profile/Profile';
-import './App.css';
 import Dialogs from './Dialogs/Dialogs';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Music from './Music/Music';
+
 import Footer from './Footer/Footer';
+import './App.css';
+import News from './News/News';
+import Settings from './Settings/Settings';
 
 export const App = () => {
   return (
@@ -16,14 +20,16 @@ export const App = () => {
           <NavBar />
           <div className="app-wrapper-content">
             <Routes>
-              <Route exact path="dialogs" element={<Dialogs />} />
-              <Route path="profile" element={<Profile />} />
+              <Route path="/" element={<Profile />} /> {/* Головна сторінка */}
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/dialogs" element={<Dialogs />} />
+              <Route path="/music" element={<Music />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/settings" element={<Settings />} />
             </Routes>
           </div>
         </div>
-        <div>
-          <Footer />
-        </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
