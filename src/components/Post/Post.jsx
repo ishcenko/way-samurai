@@ -11,7 +11,7 @@ const Post = props => {
         alt="Avatar"
         width={64}
       />
-      <div> Message: {props.message}</div>
+      <div> {props.message}</div>
       <div className="btn-like">
         <button>Like {props.likeCount}</button>
       </div>

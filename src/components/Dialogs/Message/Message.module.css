@@ -1,0 +1,14 @@
+.messages {
+  border: 1px solid darkblue;
+  display: block;
+  /* flex-direction: column; */
+  /* flex-wrap: nowrap; */
+  /* gap: 16px; */
+  padding-left: 30px;
+  padding-top: 24px;
+  background-color: rgb(4, 247, 4);
+
+  width: 50%;
+  font-size: 16px;
+  font-style: italic;
+}

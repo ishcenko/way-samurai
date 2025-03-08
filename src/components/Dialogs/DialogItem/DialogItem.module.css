@@ -1,0 +1,27 @@
+.dialogs {
+  display: flex;
+  height: 100%;
+}
+
+.dialogs_item {
+  border: 1px solid darkblue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 26px;
+  padding-left: 30px;
+  padding-top: 44px;
+  background-color: rgb(246, 234, 6);
+
+  width: 50%;
+}
+
+.dialog {
+  font-size: 16px;
+  font-style: italic;
+}
+
+p.active {
+  color: red; /* Колір активного посилання */
+  font-weight: bold; /* Додатково можна зробити текст жирним */
+}

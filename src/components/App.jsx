@@ -11,16 +11,16 @@ import './App.css';
 import News from './News/News';
 import Settings from './Settings/Settings';
 
-export const App = () => {
+export const App = props => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/way-samurai">
       <div className="app-wrapper">
         <Header />
         <div className="wrapper">
           <NavBar />
           <div className="app-wrapper-content">
             <Routes>
-              <Route path="/" element={<Profile />} /> {/* Головна сторінка */}
+              <Route index element={<Profile />} /> {/* Головна сторінка */}
               <Route path="/profile" element={<Profile />} />
               <Route path="/dialogs" element={<Dialogs />} />
               <Route path="/music" element={<Music />} />
