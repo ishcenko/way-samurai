@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header/Header';
 import NavBar from './NavBar/NavBar';
 import Profile from './Profile/Profile';
-import Dialogs from './Dialogs/Dialogs';
+import Dialogs from './Dialogs/Dialogs/Dialogs';
 import Music from './Music/Music';
 
 import Footer from './Footer/Footer';

@@ -1,19 +1,19 @@
 import React from 'react';
 import s from './Post.module.css';
 
-const Post = props => {
+const Post = ({ message, likeCount }) => {
   //   debugger;
   //   console.log(props.message);
   return (
     <div className={s.item}>
       <img
-        src="https://lumiere-a.akamaihd.net/v1/images/a_avatarpandorapedia_neytiri_16x9_1098_01_0e7d844a.jpeg?region=420%2C0%2C1080%2C1080"
+        src="https://media.istockphoto.com/id/1495088043/vector/user-profile-icon-avatar-or-person-icon-profile-picture-portrait-symbol-default-portrait.jpg?s=612x612&w=0&k=20&c=dhV2p1JwmloBTOaGAtaA3AW1KSnjsdMt7-U_3EZElZ0="
         alt="Avatar"
         width={64}
       />
-      <div> {props.message}</div>
+      <div> {message}</div>
       <div className="btn-like">
-        <button>Like {props.likeCount}</button>
+        <button>Like {likeCount}</button>
       </div>
     </div>
   );
