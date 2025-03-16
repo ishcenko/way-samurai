@@ -5,6 +5,7 @@ import Message from '../Message/Message';
 import state from 'components/redux/state';
 
 const Dialogs = () => {
+  // console.log(state);
   const dialogsElements = state.dialogsData.map(dialog => (
     <DialogItem name={dialog.name} key={dialog.id} />
   ));

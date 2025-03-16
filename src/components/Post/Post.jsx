@@ -1,9 +1,7 @@
 import React from 'react';
 import s from './Post.module.css';
 
-const Post = ({ message, likeCount }) => {
-  //   debugger;
-  //   console.log(props.message);
+const Post = ({ message, likeCount, onLike }) => {
   return (
     <div className={s.item}>
       <img
@@ -13,7 +11,9 @@ const Post = ({ message, likeCount }) => {
       />
       <div> {message}</div>
       <div className="btn-like">
-        <button>Like {likeCount}</button>
+        <button onClick={onLike}>
+          Like: <span className={s.like_number}>{likeCount}</span>
+        </button>
       </div>
     </div>
   );

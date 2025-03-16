@@ -25,16 +25,12 @@
 .btn-like button {
   display: block;
 
-  /* display: flex; */
   margin-right: auto;
   margin-left: auto;
-  /* align-items: center; */
 }
 .item button {
-  /* margin-left: 25px; */
   display: flex;
   font-size: 24px;
-  /* align-items: center; */
   margin-top: 12px;
   margin-bottom: 12px;
   padding-top: 8px;
@@ -44,4 +40,8 @@
   border: 2px solid yellow;
   background-color: yellowgreen;
   border-radius: 15px;
+}
+
+.like_number {
+  color: red;
 }

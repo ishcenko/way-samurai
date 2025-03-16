@@ -7,7 +7,7 @@ const MyPosts = () => {
 
   const [newPostText, setNewPostText] = useState('');
 
-  // ✅ Функція для додавання нового поста
+  // Функція для додавання нового поста
   const addPost = () => {
     if (newPostText.trim() === '') return; // Запобігаємо додаванню пустого поста
 
@@ -19,11 +19,22 @@ const MyPosts = () => {
     setNewPostText(''); // Очищаємо поле після додавання
   };
 
+  const likePost = id => {
+    setPosts(prevPosts =>
+      prevPosts.map(post =>
+        post.id === id ? { ...post, likeCount: post.likeCount + 1 } : post
+      )
+    );
+  };
+
   return (
     <div className={s.posts}>
       <h3>My Posts</h3>
       <div>
         <textarea
+          autoFocus
+          cols={75}
+          rows={10}
           value={newPostText}
           onChange={e => setNewPostText(e.target.value)}
           placeholder="Write something..."
@@ -37,6 +48,7 @@ const MyPosts = () => {
             key={post.id}
             message={post.message}
             likeCount={post.likeCount}
+            onLike={() => likePost(post.id)}
           />
         ))}
       </div>
