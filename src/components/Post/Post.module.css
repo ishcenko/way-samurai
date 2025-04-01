@@ -1,5 +1,5 @@
 .item {
-  min-width: 150px;
+  min-width: 300px;
   max-width: max-content;
   padding-right: 32px;
   margin-top: 26px;
@@ -9,39 +9,120 @@
   border: 2px solid rgba(255, 166, 0, 0.737);
   padding: 16px;
   margin-bottom: 50px;
-  background-color: rgb(227, 204, 204);
+  background-color: rgba(245, 228, 201, 0.786);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 1500ms ease, box-shadow 1500ms ease, border 1500ms ease;
 }
+
+.item:hover {
+  border: 1px solid whitesmoke;
+  /* transform: scale(1.05); Збільшує розмір при ховері */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Додає тінь */
+}
+
 .item img {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 18px;
-  margin-bottom: 20px;
-  /* align-self: center; */
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+  padding-top: 25px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast; /* Для Edge */
+  image-rendering: pixelated; /* Для інших браузерів */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-.btn-like button {
-  display: block;
 
-  margin-right: auto;
-  margin-left: auto;
+.item:hover img {
+  /* transform: rotate(15deg); Легке обертання при ховері */
+  opacity: 1; /* Зменшення прозорості */
 }
-.item button {
+
+.avatar_container {
+  /* border: 1px solid saddlebrown; */
+  width: 300px;
+  min-height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  transition: box-shadow 0.5s ease, border 1500ms ease;
+}
+
+.avatar_container:hover {
+  /* border: 2px solid yellow; Зміна кольору рамки */
+  /* transform: scale(1.05); Легке збільшення */
+  box-shadow: 0px 8px 16px rgba(255, 255, 0, 0.706); /* Яскравіша тінь */
+}
+
+.upload_icon {
+  position: absolute;
+  right: 75px;
+  bottom: 12px;
+  background: rgb(126, 244, 246);
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: transform 1500ms ease, background-color 1500ms ease,
+    border 1500ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload_icon:hover {
+  border: 1px solid blue;
+  background-color: rgb(4, 248, 252); /* Зміна фону при ховері */
+  transform: scale(1.2); /* Збільшення іконки */
+}
+
+.upload_icon input {
+  display: none;
+}
+
+.btn-like .button-like {
   display: flex;
   font-size: 24px;
   margin-top: 12px;
   margin-bottom: 12px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border: 2px solid yellow;
+  padding: 8px 16px;
+  border: 2px solid rgb(255, 89, 0);
   background-color: yellowgreen;
   border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 1s ease, transform 1s ease;
+}
+
+.btn-like button-like:hover {
+  background-color: rgb(150, 200, 90);
+  transform: translateY(-5px); /* Підняття кнопки при ховері */
 }
 
 .like_number {
   color: red;
+  font-weight: bold;
+}
+
+.message {
+  white-space: pre-line;
+  word-wrap: break-word;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar:hover {
+  /* transform: rotate(360deg); Повне обертання при ховері */
+  box-shadow: 0px 8px 16px rgba(255, 255, 0, 0.5); /* Додаємо яскраву тінь */
 }
