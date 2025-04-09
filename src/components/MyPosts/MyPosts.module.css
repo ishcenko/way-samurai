@@ -8,16 +8,67 @@ h3 {
   color: azure;
 }
 .posts button {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  border-radius: 20px;
-  border: none;
-  padding: 4px 24px;
+  position: relative;
+  padding: 20px;
+  min-width: 150px;
   color: white;
-  font-size: 24px;
-  background: rgba(53, 33, 100, 0.768);
+  font-family: arial;
+  text-transform: uppercase;
+  background-size: 100%;
+  z-index: 1;
+  background: transparent;
+  transition: 1500ms;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0245fd;
+    z-index: -1;
+    transition: 1500ms;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * 3px);
+    left: calc(-1 * 3px);
+    height: calc(100% + 3px * 2);
+    width: calc(100% + 3px * 2);
+    background: linear-gradient(
+      60deg,
+      #fe7f00,
+      #ff2a00,
+      #ff0048,
+      #d900ff,
+      #0055ff,
+      #1098ad,
+      #00ffdd,
+      #00ff40
+    );
+    animation: animatedgradient 5000ms ease alternate infinite;
+    background-size: 300% 300%;
+    z-index: -2;
+  }
+  &:hover {
+    cursor: pointer;
+    &:before {
+      width: 0%;
+    }
+  }
 }
-
-.new-post {
+@keyframes animatedgradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+.new_post {
   size: 32px;
 }

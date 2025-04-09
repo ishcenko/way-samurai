@@ -48,8 +48,8 @@ const Post = ({ message, likeCount, onLike }) => {
       </div>
 
       <div className={s.message}>{message}</div>
-      <div className="btn-like">
-        <button className="button-like" onClick={onLike}>
+      <div className={s.btn_like}>
+        <button className={s.button_like} onClick={onLike}>
           Like: <span className={s.like_number}>{likeCount}</span>
         </button>
       </div>

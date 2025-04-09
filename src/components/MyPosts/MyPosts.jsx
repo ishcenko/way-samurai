@@ -9,14 +9,14 @@ const MyPosts = () => {
 
   // Функція для додавання нового поста
   const addPost = () => {
-    if (newPostText.trim() === '') return; // Запобігаємо додаванню пустого поста
+    if (newPostText.trim() === '') return;
 
     setPosts(prevPosts => [
       { id: prevPosts.length + 1, message: newPostText, likeCount: 0 },
-      ...prevPosts, // Додаємо новий пост на початок списку
+      ...prevPosts, //новий пост
     ]);
 
-    setNewPostText(''); // Очищаємо поле після додавання
+    setNewPostText(''); // delete поле після додавання
   };
 
   const likePost = id => {
@@ -41,8 +41,8 @@ const MyPosts = () => {
         />
       </div>
       <button onClick={addPost}>Add post</button>{' '}
-      {/* ✅ Викликаємо addPost тільки при кліку */}
-      <div className="new-post">
+      {/*Викликаємо addPost тільки при кліку */}
+      <div className={s.new_post}>
         {posts.map(post => (
           <Post
             key={post.id}
