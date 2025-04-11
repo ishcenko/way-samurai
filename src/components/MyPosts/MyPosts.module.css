@@ -7,7 +7,7 @@ h3 {
   font-weight: 700;
   color: azure;
 }
-.posts button {
+.posts {
   position: relative;
   padding: 20px;
   min-width: 150px;
