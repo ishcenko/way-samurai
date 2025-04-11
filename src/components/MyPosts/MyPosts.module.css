@@ -18,6 +18,8 @@ button .posts {
   z-index: 1;
   background: transparent;
   transition: 1500ms;
+  border: 2px;
+border-radius: 12px;
   &:before {
     content: '';
     position: absolute;
