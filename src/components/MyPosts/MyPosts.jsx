@@ -40,7 +40,9 @@ const MyPosts = () => {
           placeholder="Write something..."
         />
       </div>
-      <button className={s.btn_addpost} onClick={addPost}>Add post</button>{' '}
+      <button className={s.btn_addpost} onClick={addPost}>
+        Add post
+      </button>{' '}
       {/*Викликаємо addPost тільки при кліку */}
       <div className={s.new_post}>
         {posts.map(post => (

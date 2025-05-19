@@ -51,11 +51,12 @@
   transition: box-shadow 0.5s ease, border 1500ms ease;
 }
 
-.avatar_container:hover {
-  /* border: 2px solid yellow; Зміна кольору рамки */
-  /* transform: scale(1.05); Легке збільшення */
-  box-shadow: 0px 8px 16px rgba(255, 255, 0, 0.706); /* Яскравіша тінь */
-}
+/*.avatar_container:hover {
+  border: 2px solid yellow; Зміна кольору рамки 
+   transform: scale(1.05); Легке збільшення 
+  box-shadow: 0px 8px 16px rgba(255, 255, 0, 0.706); Яскравіша тінь 
+} 
+*/
 
 .upload_icon {
   position: absolute;
@@ -84,14 +85,71 @@
 
 .btn_like {
   /* display: flex; */
-  font-size: 24px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  /* padding: 8px 16px; */
-  /* border: 2px solid rgb(255, 89, 0); */
-  background: red;
-  border-radius: 15px;
+  position: relative;
+  padding: 20px;
+  min-width: 150px;
+  color: white;
+  font-family: arial;
+  text-transform: uppercase;
+  background-size: 100%;
+  z-index: 1;
+  background: transparent;
+  transition: 1500ms;
+  border: 4px;
+  border-radius: 12px;
   cursor: pointer;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #acb8da;
+    z-index: -1;
+    transition: 15ms;
+    border-radius: 15px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * 3px);
+    left: calc(-1 * 3px);
+    height: calc(100% + 3px * 2);
+    width: calc(100% + 3px * 2);
+    border-radius: 19px;
+    background: linear-gradient(
+      60deg,
+      #fb5959,
+      #f77e66,
+      #74f974,
+      #7ff8fc,
+      #79a4fa,
+      #fa7ee1,
+      #82faea,
+      #7bfa9b
+    );
+    animation: animatedgradient 5000ms ease alternate infinite;
+    background-size: 300% 300%;
+    z-index: -2;
+  }
+  &:hover {
+    cursor: pointer;
+    &:before {
+      width: 0%;
+    }
+  }
+}
+@keyframes animatedgradient {
+  0% {
+    background-position: 100% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 10% 100%;
+  }
 }
 
 .like_number {
@@ -117,7 +175,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.avatar:hover {
-  /* transform: rotate(360deg); Повне обертання при ховері */
-  box-shadow: 0px 8px 16px rgba(255, 255, 0, 0.5); /* Додаємо яскраву тінь */
+/*.avatar:hover {
+ transform: rotate(360deg); 
+  box-shadow: 0px 8px 16px rgba(255, 255, 0, 0.5); 
 }
+*/

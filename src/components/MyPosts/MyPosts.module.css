@@ -9,6 +9,7 @@ h3 {
 }
 .btn_addpost {
   position: relative;
+  margin-top: 16px;
   padding: 20px;
   min-width: 150px;
   color: white;
@@ -19,7 +20,7 @@ h3 {
   background: transparent;
   transition: 1500ms;
   border: 2px;
-border-radius: 12px;
+  border-radius: 12px;
   &:before {
     content: '';
     position: absolute;
@@ -27,9 +28,10 @@ border-radius: 12px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0245fd;
+    background: #2249b6;
+    border-radius: 15px;
     z-index: -1;
-    transition: 1500ms;
+    transition: 15ms;
   }
   &:after {
     content: '';
@@ -38,6 +40,7 @@ border-radius: 12px;
     left: calc(-1 * 3px);
     height: calc(100% + 3px * 2);
     width: calc(100% + 3px * 2);
+    border-radius: 19px;
     background: linear-gradient(
       60deg,
       #fe7f00,
